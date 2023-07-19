@@ -4,9 +4,26 @@
     font-family: 'Work Sans', sans-serif;;
 }
 :root{
+    --h1-big-font-size: 3rem;
     --linear-pink: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    --linear-purple: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     --paragraph-short-size: 18px;
     --paragraph-large-size:20px; 
+    --paragraph-common-color:#534C64;
+}
+
+/* common styles */
+h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.linear-purple-title{
+font-size: var(--h1-big-font-size);
+font-weight: 700;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-bottom:20px;
 }
 
 /* navigation styles */
@@ -17,10 +34,7 @@ nav{
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 
 }
-h1{
-    font-size: 2.8rem;
-    font-weight: 700;
-}
+
 
 .logo{
     display:flex;
@@ -77,17 +91,18 @@ h1{
 }
 #banner-content p{
     font-size: var(--paragraph-large-size);
+    color:var(--paragraph-common-color)
 }
 .fa-circle-play, .fa-user-group, .fa-download{
     color:#FF42A5;
 }
 #banner-top-title{
     color: #0B0223;
-    font-size: 3rem;
+    font-size: var(--h1-big-font-size);
     font-weight: 600;
 }
 #banner-goat-title{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background: var(--linear-purple);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 6rem;
@@ -119,7 +134,32 @@ h1{
     font-weight: 600;
 }
 #banner-bg{
-    margin-top:1%;
+    margin-bottom: -5px;
     margin-right:11%;
 }
 
+/* We are gamer section styles */
+#we-are-gamer{
+    background: url('./images/pngwing\ 4.png'), linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    text-align:right;
+    padding: 85px 240px;
+    background-repeat:no-repeat;
+    background-position: 22% center;
+}
+#we-are-gamer p{
+    font-size:var(--paragraph-short-size);
+    line-height:30px;
+    color:var(--paragraph-common-color);
+}
+#we-are-gamer button{
+    margin:30px 0px;
+}
+.our-purpose{
+    font-size: 24px !important;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.unleash-the-gamer{
+    font-size: 32px !important;
+    font-weight: 700;
+}
