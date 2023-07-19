@@ -322,3 +322,32 @@ nav{
     font-size: var(--paragraph-large-size);
     font-weight: 600;
 }
+
+/* games section */
+#games{
+    margin-bottom:100px;
+}
+#games-container{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    padding:30px 240px;
+    row-gap: 50px;
+}
+.games-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.games-content:hover{
+    
+    border:2px solid #FF42A5;
+    border-radius:35px;
+    cursor: pointer;
+}
+.games-content:hover p{
+    color:#FF42A5;
+    
+}
+
+/* footer styles */
