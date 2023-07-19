@@ -325,13 +325,15 @@ nav{
 
 /* games section */
 #games{
-    margin-bottom:100px;
+    margin-bottom:30px;
 }
 #games-container{
-    display:grid;
-    grid-template-columns: repeat(5,1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     padding:30px 240px;
-    row-gap: 50px;
+    gap:30px;
 }
 .games-content{
     display:flex;
@@ -351,3 +353,54 @@ nav{
 }
 
 /* footer styles */
+footer{
+    color:#FFF;
+}
+.footer-container{
+    background:#0B0223;
+}
+.footer-logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:80px 0px 30px;
+}
+#footer-logo-text{
+    color:#FFF;
+}
+.footer-menu ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    padding:40px 0px;
+
+}
+.footer-icons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+.footer-menu2 ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    padding:40px 0px;
+}
+.footer-menu2 ul li{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding-bottom:90px;
+}
+.copyright p{
+    color:rgba(255, 255, 255, 0.60);
+    font-size: 16px;;
+}
