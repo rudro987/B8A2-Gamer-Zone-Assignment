@@ -4,7 +4,9 @@
     font-family: 'Work Sans', sans-serif;;
 }
 :root{
-    --first-letter-color: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    --linear-pink: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    --paragraph-short-size: 18px;
+    --paragraph-large-size:20px; 
 }
 
 /* navigation styles */
@@ -12,6 +14,8 @@ nav{
     display:flex;
     justify-content: space-between;
     padding:40px 240px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+
 }
 h1{
     font-size: 2.8rem;
@@ -27,8 +31,7 @@ h1{
     margin-top:7px;
 }
 .first-letter-color{
-    background: var(--first-letter-color);
-    background-clip: text;
+    background: var(--linear-pink);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -42,7 +45,7 @@ h1{
 .menu-items ul li a{
     text-decoration: none;
     color: #3C354F;
-    font-size: 18px;
+    font-size: var(--paragraph-short-size);
     font-weight: 500;
 }
 #follow-us{
@@ -55,3 +58,68 @@ h1{
     justify-content: center;
     align-items:center;
 }
+
+/* banner section styles */
+#banner{
+    display:flex;
+}
+#banner-content{
+    background:url('./images/Group 14.png');
+    width:100%;
+    background-repeat: no-repeat;
+    padding: 6% 13%;
+}
+.banner-paragraph{
+    display:flex;
+    gap:20px;
+    align-items: center;
+    margin-top:30px;
+}
+#banner-content p{
+    font-size: var(--paragraph-large-size);
+}
+.fa-circle-play, .fa-user-group, .fa-download{
+    color:#FF42A5;
+}
+#banner-top-title{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+}
+#banner-goat-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 6rem;
+    font-weight: 800;
+}
+#banner-btn{
+    display:inline-flex;
+    gap:20px;
+    margin-top:50px;
+}
+.btn-primary{
+    padding: 21px 40px;
+    gap: 10px;
+    border-radius: 48px;
+    background:var(--linear-pink);
+    border:none;
+    color: #FFF;
+    font-size: var(--paragraph-large-size);
+    font-weight: 600;
+}
+.go-rouge-btn{
+    padding: 21px 40px;
+    gap: 10px;
+    border-radius: 48px;
+    background: #4EC5F7;
+    border:none;
+    color: #FFF;
+    font-size: var(--paragraph-large-size);
+    font-weight: 600;
+}
+#banner-bg{
+    margin-top:1%;
+    margin-right:11%;
+}
+
